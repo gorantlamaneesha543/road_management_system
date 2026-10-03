@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inspectorFragment">
+
+    <fragment
+        android:id="@+id/inspectorFragment"
+        android:name="com.example.a31mod2case2.InspectorFragment"
+        android:label="Road Inspector"
+        tools:layout="@layout/fragment_inspector" />
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.a31mod2case2.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.example.a31mod2case2.ReportsFragment"
+        android:label="Inspection Reports"
+        tools:layout="@layout/fragment_reports" />
+
+</navigation>

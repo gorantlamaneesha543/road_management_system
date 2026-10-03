@@ -1,0 +1,59 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer Shield Background -->
+    <path
+        android:fillColor="#0D1B2A"
+        android:pathData="M54,8L90,24V50C90,74 74,92 54,100C34,92 18,74 18,50V24L54,8Z" />
+
+    <!-- Shield Inner Glow Border -->
+    <path
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="3"
+        android:fillColor="#1B263B"
+        android:pathData="M54,12L85,26V49C85,71 70,88 54,95C38,88 23,71 23,49V26L54,12Z" />
+
+    <!-- Circuit Lines -->
+    <path
+        android:strokeColor="#00B4D8"
+        android:strokeWidth="1.5"
+        android:pathData="M23,35H35M23,65H38M85,35H73M85,65H70" />
+
+    <!-- AI Chip Box at Top Center -->
+    <path
+        android:fillColor="#0077B6"
+        android:pathData="M44,22H64V36H44Z" />
+    <path
+        android:strokeColor="#90E0EF"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M44,22H64V36H44Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,26H51V32H48V26ZM53,26H55V32H53V26ZM57,26H60V32H57V26Z" />
+
+    <!-- Winding Road Curve at Bottom -->
+    <path
+        android:strokeColor="#FFB703"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M28,85C35,75 45,72 54,72C65,72 75,65 80,45" />
+
+    <!-- Upward Arrow Tip -->
+    <path
+        android:fillColor="#00E5FF"
+        android:pathData="M74,38L84,43L78,51Z" />
+
+    <!-- Stylish MS Letters in Center -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,62V40H34L39,53L44,40H48V62H44V48L39,60H39L34,48V62H30Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,62V59H63V56H55C52,56 50,54 50,50C50,45 53,40 59,40H64V43H59C55,43 54,45 54,47C54,49 55,51 59,51H63C67,51 68,54 68,58C68,62 65,65 60,65H54V62Z" />
+
+</vector>

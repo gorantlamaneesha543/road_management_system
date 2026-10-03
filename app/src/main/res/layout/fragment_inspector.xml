@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Camera Preview Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@android:color/black">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <androidx.camera.view.PreviewView
+                    android:id="@+id/previewView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <!-- Status Overlay Badge -->
+                <TextView
+                    android:id="@+id/tvInspectionStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="12dp"
+                    android:background="#CC000000"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="6dp"
+                    android:text="Camera Ready"/>
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Start/Stop Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartInspection"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="START INSPECTION"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Latest AI Result Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/surface">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🧠 AI Road Analysis Result"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/tvDamageType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Damage: Waiting for frame..."
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:paddingBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/tvSeverity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Severity: --"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:paddingBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/tvConfidence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confidence: --"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:paddingBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GPS Location: --"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary"
+                    android:paddingBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/tvRecommendation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recommendation: --"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/primary_variant"
+                    android:paddingTop="6dp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

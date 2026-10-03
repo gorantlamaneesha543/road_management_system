@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Stylish road path -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M9,2L4,22H7L10,12L12,18L14,12L17,22H20L15,2H9Z" />
+    <!-- MS letters overlay outline or shape -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M2,6L5,14L8,6H10V18H8V10L5,17L2,10V18H0V6H2ZM16,6H19C21,6 22,7 22,9C22,10.5 21,11.5 19.5,12C21,12.5 22,13.5 22,15C22,17 20,18 18,18H16V6ZM18,10H17V8H18C18.5,8 19,8.2 19,9C19,9.8 18.5,10 18,10ZM18,16H17V12H18C18.8,12 19.5,12.3 19.5,14C19.5,15.7 18.8,16 18,16Z" />
+</vector>
